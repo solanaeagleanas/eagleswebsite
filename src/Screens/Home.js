@@ -47,17 +47,9 @@ function Home() {
   const [open, setOpen] = React.useState(false);
   const anchorRef = React.useRef(null);
   const classes = useStyles();
-  const theme = useTheme();
-  const [value, setValue] = React.useState(0);
   const [answer1, setAnswer1] = React.useState(false);
 
   const [answer2, setAnswer2] = React.useState(false);
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
-  const handleChangeIndex = (index) => {
-    setValue(index);
-  };
 
   const handleToggle = () => {
     setOpen((prevOpen) => !prevOpen);
