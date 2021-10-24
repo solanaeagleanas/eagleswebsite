@@ -1,0 +1,32 @@
+#menu {
+    display: none;
+  }
+  
+  #intro {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  #question1 {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  @media (max-width: 600px) {
+    #navtext {
+      display: none;
+    }
+    #menu {
+      display: inline-block;
+    }
+    #intro {
+      width: 411px;
+      flex-direction: column;
+    }
+    #entire {
+      height: 1000px;
+      overflow-x: hidden;
+      overflow-y: scroll;
+    }
+  }
+  
