@@ -16,7 +16,7 @@ import MenuList from "@mui/material/MenuList";
 
 import Avatar from "@mui/material/Avatar";
 import "./mobile.css";
-import { makeStyles, useTheme } from "@mui/styles";
+import { makeStyles } from "@mui/styles";
 
 const useStyles = makeStyles(() => ({
   navlinks: {
@@ -94,7 +94,6 @@ function Home() {
 
     prevOpen.current = open;
   }, [open]);
-  let button;
 
   return (
     <div id="entire">
@@ -103,7 +102,6 @@ function Home() {
           <Toolbar>
             <Button
               ref={anchorRef}
-              id="composition-button"
               aria-controls={open ? "composition-menu" : undefined}
               aria-expanded={open ? "true" : undefined}
               aria-haspopup="true"
