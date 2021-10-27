@@ -1,32 +1,274 @@
 #menu {
+  display: none;
+}
+
+#intro {
+  display: flex;
+  flex-direction: row;
+}
+
+#question1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#mydrop {
+  color: black;
+  font-size: 30px;
+  text-align: center;
+  font-family: cursive;
+}
+#myquestion {
+  color: #e327a1;
+  font-size: 22px;
+  text-align: center;
+  justify-content: center;
+  font-family: cursive;
+  margin-top: 10px;
+}
+
+#twitter {
+  position: relative;
+  left: 45%;
+}
+#discord {
+  position: relative;
+  left: 55%;
+}
+#footer {
+  display: "flex";
+  flex-direction: "row";
+  position: relative;
+  bottom: 0%;
+  top: 50%;
+}
+#question1 {
+  display: "flex";
+  flex-direction: "row";
+  color: "#E327A1";
+  margin-top: 30;
+  width: 550;
+  justify-content: "center";
+  spacing: 0;
+  position: "relative";
+  left: "50%";
+  top: "50%";
+  transform: "translate(-50%, -50%)";
+}
+#arrow1 {
+  float: right;
+  position: relative;
+  right: 0%;
+  margin-top: 10px;
+}
+#answers {
+  justify-content: "center";
+  position: "relative";
+  left: "80%";
+  top: "50%";
+  text-align: center;
+  width: 550px;
+  height: 40px;
+  margin-left: 350px;
+  margin-top: 10px;
+  transform: "translate(-50%, -50%)";
+}
+
+#arrow2 {
+  float: right;
+  position: relative;
+  right: 0%;
+  margin-top: 10px;
+}
+#listtext {
+  color: black;
+  position: absolute;
+  left: 30%;
+  right: 30%;
+  font-size: 18px;
+  font-family: cursive;
+  margin-left: 10px;
+}
+#listbody {
+  margin-top: 20px;
+}
+#iconn {
+  position: absolute;
+  left: 28%;
+  right: 30%;
+}
+#holder {
+  margin-top: 50px;
+  color: black;
+}
+
+#roadmap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#roadmapinside {
+  height: 100px;
+  width: 200px;
+  margin-left: 50px;
+  padding: 20px;
+  margin-top: 40px;
+}
+#roadmappaper {
+  padding: 10px;
+}
+#roadmaptext {
+  padding: 10px;
+}
+#myintrotext {
+  text-align: center;
+  width: 500px;
+  margin-left: 100px;
+}
+#img {
+  margin-left: 50px;
+}
+#questionhr {
+  width: 700px;
+}
+#mydrop2 {
+  color: black;
+  font-size: 30px;
+  text-align: center;
+  font-family: cursive;
+  margin-top: 50px;
+}
+#mydrop3 {
+  color: black;
+  font-size: 30px;
+  text-align: center;
+  font-family: cursive;
+  margin-top: 70px;
+}
+#nowwhat {
+  color: black;
+  font-size: 15px;
+  text-align: center;
+  font-family: cursive;
+  margin-top: 10px;
+  width: 800px;
+  position: relative;
+  left: 15%;
+  right: 20%;
+}
+
+@media (max-width: 600px) {
+  #questionhr {
+    width: 300px;
+  }
+  #arrow1 {
+    float: right;
+    position: relative;
+    right: 0%;
+  }
+  #arrow2 {
+    float: right;
+    position: relative;
+    right: 0%;
+  }
+  #answers {
+    justify-content: "center";
+    position: "relative";
+    left: "0%";
+    top: "50%";
+    text-align: left;
+    width: 350px;
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 10px;
+    transform: "translate(-50%, -50%)";
+  }
+
+  #img {
+    margin-left: 20px;
+    margin-top: 15px;
+  }
+
+  #roadmap {
+    display: flex;
+    flex-direction: column;
+  }
+  #navtext {
     display: none;
   }
-  
+  #menu {
+    display: inline;
+    position: absolute;
+    left: 0%;
+  }
+  #myintrotext {
+    text-align: center;
+    width: 300px;
+    margin-left: 10px;
+  }
   #intro {
-    display: flex;
-    flex-direction: row;
+    width: 411px;
+    flex-direction: column;
   }
-  
-  #question1 {
-    display: flex;
-    flex-direction: row;
+  #entire {
+    height: 8000px;
+    overflow-x: hidden;
+    overflow-y: scroll;
   }
-  
-  @media (max-width: 600px) {
-    #navtext {
-      display: none;
-    }
-    #menu {
-      display: inline-block;
-    }
-    #intro {
-      width: 411px;
-      flex-direction: column;
-    }
-    #entire {
-      height: 1000px;
-      overflow-x: hidden;
-      overflow-y: scroll;
-    }
+
+  #iconn {
+    position: relative;
+    left: 18%;
+    right: 30%;
   }
-  
+  #mydrop2 {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    font-family: cursive;
+    margin-top: 40px;
+  }
+  #roadmapinside {
+    height: 100px;
+    width: 200px;
+    padding: 20px;
+    position: relative;
+    left: 10%;
+    top: 5%;
+    align-items: center;
+  }
+  #mydrop3 {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    font-family: cursive;
+    margin-top: 70px;
+  }
+  #nowwhat {
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    font-family: cursive;
+    margin-top: 10px;
+    width: 250px;
+    position: relative;
+    left: 20%;
+    right: 20%;
+  }
+
+  #twitter {
+    position: relative;
+    left: 45%;
+  }
+  #discord {
+    position: relative;
+    left: 55%;
+  }
+  #footer {
+    display: "flex";
+    flex-direction: "row";
+    position: absolute;
+    bottom: 0%;
+    top: 50%;
+  }
+}
