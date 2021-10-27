@@ -24,7 +24,6 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import Avatar from "@mui/material/Avatar";
 import "./mobile.css";
 import { makeStyles } from "@mui/styles";
-import { styled } from "@mui/material/styles";
 
 const useStyles = makeStyles(() => ({
   entire: {
