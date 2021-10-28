@@ -1,3 +1,20 @@
+#bottom {
+  margin-top: 50px;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+#entire {
+  background-color: #141414;
+}
+#twitter {
+  position: absolute;
+  left: 40%;
+}
+#discord {
+  position: relative;
+  top: 7%;
+}
 #menu {
   display: none;
 }
@@ -13,28 +30,20 @@
   justify-content: center;
 }
 #mydrop {
-  color: black;
   font-size: 30px;
   text-align: center;
-  font-family: cursive;
+  color: white;
+  text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 10px #fff, 0 0 40px #f09,
+    0 0 10px #f09, 0 0 10px #f09, 0 0 10px #f09, 0 0 150px #f09;
 }
 #myquestion {
-  color: #e327a1;
+  color: white;
   font-size: 22px;
   text-align: center;
   justify-content: center;
-  font-family: cursive;
   margin-top: 10px;
 }
 
-#twitter {
-  position: relative;
-  left: 45%;
-}
-#discord {
-  position: relative;
-  left: 55%;
-}
 #footer {
   display: "flex";
   flex-direction: "row";
@@ -72,6 +81,7 @@
   margin-left: 350px;
   margin-top: 10px;
   transform: "translate(-50%, -50%)";
+  color: white;
 }
 
 #arrow2 {
@@ -81,12 +91,12 @@
   margin-top: 10px;
 }
 #listtext {
-  color: black;
+  color: white;
   position: absolute;
   left: 30%;
   right: 30%;
   font-size: 18px;
-  font-family: cursive;
+
   margin-left: 10px;
 }
 #listbody {
@@ -116,14 +126,27 @@
 }
 #roadmappaper {
   padding: 10px;
+  background-color: #b026ff;
 }
 #roadmaptext {
   padding: 10px;
+
+  background-color: #b026ff;
+  color: white;
 }
 #myintrotext {
   text-align: center;
   width: 500px;
   margin-left: 100px;
+  color: white;
+}
+#myheading {
+  text-align: center;
+  font-size: 35px;
+  color: #b026ff;
+  font-family: "Luckiest Guy", cursive;
+  text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 10px #fff, 0 0 40px #f09,
+    0 0 80px #f09, 0 0 90px #f09, 0 0 100px #f09, 0 0 150px #f09;
 }
 #img {
   margin-left: 50px;
@@ -132,24 +155,25 @@
   width: 700px;
 }
 #mydrop2 {
-  color: black;
+  color: white;
   font-size: 30px;
   text-align: center;
-  font-family: cursive;
   margin-top: 50px;
+  text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 10px #fff, 0 0 40px #f09,
+    0 0 10px #f09, 0 0 10px #f09, 0 0 10px #f09, 0 0 150px #f09;
 }
 #mydrop3 {
-  color: black;
+  color: white;
   font-size: 30px;
   text-align: center;
-  font-family: cursive;
   margin-top: 70px;
+  text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 10px #fff, 0 0 40px #f09,
+    0 0 10px #f09, 0 0 10px #f09, 0 0 10px #f09, 0 0 150px #f09;
 }
 #nowwhat {
-  color: black;
+  color: white;
   font-size: 15px;
   text-align: center;
-  font-family: cursive;
   margin-top: 10px;
   width: 800px;
   position: relative;
@@ -222,10 +246,9 @@
     right: 30%;
   }
   #mydrop2 {
-    color: black;
+    color: white;
     font-size: 30px;
     text-align: center;
-    font-family: cursive;
     margin-top: 40px;
   }
   #roadmapinside {
@@ -238,17 +261,15 @@
     align-items: center;
   }
   #mydrop3 {
-    color: black;
+    color: white;
     font-size: 30px;
     text-align: center;
-    font-family: cursive;
     margin-top: 70px;
   }
   #nowwhat {
-    color: black;
+    color: white;
     font-size: 15px;
     text-align: center;
-    font-family: cursive;
     margin-top: 10px;
     width: 250px;
     position: relative;
@@ -256,19 +277,22 @@
     right: 20%;
   }
 
+  #bottom {
+    position: inherit;
+    bottom: 0%;
+    width: 100%;
+    color: white;
+    text-align: center;
+    left: 0%;
+    margin-top: 50px;
+  }
   #twitter {
-    position: relative;
-    left: 45%;
+    position: absolute;
+    left: 30%;
   }
   #discord {
     position: relative;
-    left: 55%;
-  }
-  #footer {
-    display: "flex";
-    flex-direction: "row";
-    position: absolute;
-    bottom: 0%;
-    top: 50%;
+    left: 15%;
+    top: 5%;
   }
 }
