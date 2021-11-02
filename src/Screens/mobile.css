@@ -1,8 +1,11 @@
+#myrespo {
+  display: none;
+}
 #teams {
   font-size: 30px;
   text-align: center;
-  color: #fdd700;
-  margin-top: 80px;
+  color: hsl(51, 100%, 50%);
+  margin-top: 160px;
   text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 10px #fff, 0 0 40px #f09,
     0 0 10px rgb(15, 15, 12), 0 0 10px rgb(240, 243, 54),
     0 0 10px rgb(236, 204, 18), 0 0 150px rgb(10, 5, 8);
@@ -24,7 +27,7 @@
 }
 #eagles {
   width: 200px;
-  height: 200px;
+  height: 170px;
 }
 #roadmapinsideteam {
   height: 290px;
@@ -242,17 +245,31 @@
   margin-left: 350px;
   padding: 20px;
   margin-top: 10px;
-  background-color: #fdd700;
 }
 #roadmappaper {
   padding: 10px;
   background-color: #b026ff;
+  margin-top: 15px;
 }
 #roadmaptext {
   padding: 10px;
 
-  background-color: #b026ff;
-  color: white;
+  background-color: #fdd700;
+  color: black;
+  margin-top: 1px;
+}
+#mypoints {
+  height: 270px;
+  padding: 10px;
+}
+#mypoints3 {
+  height: 350px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+#mypoints4 {
+  height: 350px;
+  padding: 10px;
 }
 #myintrotext {
   text-align: center;
@@ -468,14 +485,44 @@
       0 0 10px rgb(15, 15, 12), 0 0 10px rgb(240, 243, 54),
       0 0 10px rgb(236, 204, 18), 0 0 150px rgb(10, 5, 8);
   }
+
+  #roadmap {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
   #roadmapinside {
-    height: 100px;
-    width: 200px;
-    padding: 20px;
-    position: relative;
-    left: 10%;
-    top: 5%;
-    align-items: center;
+    height: 550px;
+    width: 350px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 25px;
+  }
+
+  #roadmappaper {
+    padding: 10px;
+    background-color: #b026ff;
+    margin-top: 15px;
+  }
+  #roadmaptext {
+    padding: 10px;
+
+    background-color: #fdd700;
+    color: black;
+    margin-top: 1px;
+  }
+  #mypoints {
+    height: 450px;
+    padding: 10px;
+  }
+  #mypoints3 {
+    height: 480px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  #mypoints4 {
+    height: 600px;
+    padding: 10px;
   }
   #mydrop3 {
     color: white;
@@ -529,7 +576,7 @@
     font-size: 30px;
     text-align: center;
     color: #fdd700;
-    margin-top: 80px;
+    margin-top: 280px;
     text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 10px #fff, 0 0 40px #f09,
       0 0 10px rgb(15, 15, 12), 0 0 10px rgb(240, 243, 54),
       0 0 10px rgb(236, 204, 18), 0 0 150px rgb(10, 5, 8);
@@ -563,5 +610,23 @@
   }
   #listbody {
     margin-top: 90px;
+  }
+
+  #myrespo {
+    display: block;
+  }
+  #myappbar {
+    background-color: #fdd700;
+    display: block;
+  }
+  #menu {
+    margin-left: 10px;
+  }
+  #mylinks {
+    color: #141414;
+    text-decoration: none;
+  }
+  #websitedrawer {
+    display: none;
   }
 }
