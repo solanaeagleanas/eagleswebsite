@@ -1,6 +1,23 @@
 #myrespo {
   display: none;
 }
+#mylogotext {
+  font-size: 20px;
+  color: #fdd700;
+  text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 10px #fff, 0 0 40px #f09,
+    0 0 1px rgb(15, 15, 12), 0 0 1px rgb(240, 243, 54),
+    0 0 1px rgb(236, 204, 18), 0 0 1px rgb(10, 5, 8);
+  margin-right: 150px;
+}
+
+#mylogotext2 {
+  font-size: 18px;
+  color: #fdd700;
+  text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 10px #fff, 0 0 40px #f09,
+    0 0 1px rgb(15, 15, 12), 0 0 1px rgb(240, 243, 54),
+    0 0 1px rgb(236, 204, 18), 0 0 1px rgb(10, 5, 8);
+  margin-left: 45px;
+}
 #teams {
   font-size: 30px;
   text-align: center;
@@ -549,18 +566,24 @@
     text-align: center;
     left: 0%;
     margin-top: 50px;
+    height: 80px;
   }
   #twitter {
     position: absolute;
     left: 20%;
+    margin-top: 10px;
   }
   #instagram {
     position: absolute;
     left: 42%;
+
+    margin-top: 10px;
   }
   #discord {
     position: relative;
-    left: 15%;
+    left: 200%;
+    bottom: 20%;
+    height: 50px;
   }
   #myvideo {
     margin-left: 0px;
@@ -616,7 +639,7 @@
     display: block;
   }
   #myappbar {
-    background-color: #fdd700;
+    background-color: black;
     display: block;
   }
   #menu {
