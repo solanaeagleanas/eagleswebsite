@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -17,7 +17,6 @@ import Avatar from "@mui/material/Avatar";
 import "./mobile.css";
 import { makeStyles } from "@mui/styles";
 import banner from "../banner.jpg";
-import logo from "../Logo.mp4";
 import falcon from "../falcon.jpg";
 import griffin from "../riffin.png";
 import dexter from "../dexter.jpg";
@@ -29,6 +28,8 @@ import CircleIcon from "@mui/icons-material/Circle";
 import MyDrawer from "./MyDrawer";
 import discord from "../discord.png";
 import mylogo from "../Logo.png";
+import solana from "../NFT.gif";
+import myvideo from "../Logo.gif";
 const useStyles = makeStyles(() => ({
   entire: {
     backgroundColor: "#141414",
@@ -138,10 +139,6 @@ function Home() {
   const Howmuchfalse10 = () => {
     setAnswer10(false);
   };
-  useEffect(() => {
-    // Update the document title using the browser API
-    document.getElementById("myvideo").play();
-  }, []);
 
   // return focus to the button when we transitioned from !open -> open
 
@@ -156,8 +153,8 @@ function Home() {
               style={{
                 posiiton: "absolute",
                 left: "0%",
-                width: "80px",
-                height: "80px",
+                width: "60px",
+                height: "60px",
               }}
               variant="square"
               src={mylogo}
@@ -197,12 +194,14 @@ function Home() {
       <Box>
         <Avatar alt="Remy Sharp" variant="square" src={banner} id="mybanner" />
       </Box>
+      <Box>
+        <Typography id="name">SOLANA EAGLES</Typography>
+        <Avatar id="solana" src={solana} variant="square" alt="solana" />
+      </Box>
       <Box className={classes.intro} id="intro" sx={{ display: "flex" }}>
         <Typography id="myintrotext">
-          <Typography id="myheading" class="font-effect-neon">
-            About us
-          </Typography>
-          Solana Eagle is a NFT Collection of 3,333 Unique Eagles 🦅 flying in
+          <Typography id="myheading">About us</Typography>
+          Solana Eagle is a NFT Collection of 4000 Unique Eagles 🦅 flying in
           the Solana Blockchain. Eagles 🦅 fly alone or with their own kind !
           We, the team of Solana Eagles wants to build a community of people who
           are of our own kind - who shares the same vision as our's, who shares
@@ -210,9 +209,7 @@ function Home() {
           Community !!!
         </Typography>
         <div>
-          <video id="myvideo" autoplay muted>
-            <source src={logo} type="video/mp4" />
-          </video>{" "}
+          <Avatar src={myvideo} id="myvideo" alt="video" variant="square" />
         </div>
       </Box>
       <div id="faqs">
@@ -245,7 +242,7 @@ function Home() {
       <Box id="question1">
         <Slide direction="right" in={true} timeout={{ enter: 3000 }}>
           <Typography id="myquestion">
-            How many SolEagles will be Minted ?
+            How many SolanaEagles will be Minted ?
           </Typography>
         </Slide>
 
@@ -261,7 +258,7 @@ function Home() {
       <hr id="questionhr" />
       {answer2 ? (
         <Typography id="answers" style={{ display: "block" }}>
-          3,333 Unique SolanaEagles will be Minted.
+          4000 Unique SolanaEagles will be Minted.
         </Typography>
       ) : (
         <Typography id="answers" style={{ display: "none" }}></Typography>
@@ -330,7 +327,7 @@ function Home() {
       <hr id="questionhr" />
       {answer5 ? (
         <Typography id="answers" style={{ display: "block" }}>
-          Minting will take place on 11th November at 8 pm (20:00) UTC time.{" "}
+          Minting will take place on 15th November at 8 pm (20:00) UTC time.{" "}
         </Typography>
       ) : (
         <Typography id="answers" style={{ display: "none" }}></Typography>
@@ -380,10 +377,18 @@ function Home() {
       <hr id="questionhr" />
       {answer7 ? (
         <Typography id="answers7" style={{ display: "block" }}>
-          We recommend using Phantom https://phantom.app/, but you can also use
-          Sollet https://www.sollet.io/. Download one of these wallet extensions
-          for your browser. Buy SOL on an exchange like FTX, Binance or Coinbase
-          and send it to your wallet's public address.
+          We recommend using Phantom{" "}
+          <a href="https://phantom.app/" style={{ color: "#fdd700" }}>
+            https://phantom.app/
+          </a>
+          , but you can also use Sollet
+          <a href="https://www.sollet.io/" style={{ color: "#fdd700" }}>
+            {" "}
+            https://www.sollet.io/
+          </a>
+          . Download one of these wallet extensions for your browser. Buy SOL on
+          an exchange like FTX, Binance or Coinbase and send it to your wallet's
+          public address.
         </Typography>
       ) : (
         <Typography id="answers" style={{ display: "none" }}></Typography>
@@ -431,9 +436,9 @@ function Home() {
       {answer9 ? (
         <Typography id="answers9" style={{ display: "block" }}>
           Yes! We have lots of exciting things planned for future. We will be
-          releasing another collection for the SolEagle Family in the future.
-          And we also plan to do a free drop for holders and setting up our DAO
-          (Decentralized autonomous organization) . All details will be
+          releasing another collection for the SolanaEagles Family in the
+          future. And we also plan to do a free drop for holders and setting up
+          our DAO (Decentralized autonomous organization) . All details will be
           described in our roadmap very soon.
         </Typography>
       ) : (
@@ -462,9 +467,154 @@ function Home() {
       ) : (
         <Typography id="answers" style={{ display: "none" }}></Typography>
       )}
+
+      <Slide direction="left" in={true} timeout={{ enter: 7000 }}>
+        <Typography id="mydrop2">RoadMap</Typography>
+      </Slide>
+      <Box id="roadmap">
+        <Box id="roadmapinside">
+          <Slide direction="left" in={true} timeout={{ enter: 7000 }}>
+            <Paper id="roadmapaper">
+              <Typography id="roadmaptext">
+                <b id="phases">PHASE 1</b>
+                <br />
+                <span id="phase2">
+                  GETTING OUR EAGLES READY & CREATING OUR COMMUNITY{" "}
+                </span>
+              </Typography>
+
+              <Typography id="mypoints">
+                <ul>
+                  <li>
+                    Our goal at Solana Eagles is to bring high quality Artwork
+                    that the community loves. We want to do our part to
+                    strengthen the Solana community.
+                  </li>
+                  <li>
+                    We believe that a Strong and Engaging community is the
+                    backbone of every great project and truly we think without
+                    our members we won't be able to accomplish our goals. For
+                    SolanaEagles your Opinions and Feedback will be the utmost
+                    Priority{" "}
+                  </li>
+                </ul>
+              </Typography>
+            </Paper>
+          </Slide>
+        </Box>
+        <Box id="roadmapinside">
+          <Slide direction="left" in={true} timeout={{ enter: 7000 }}>
+            <Paper id="roadmapaper">
+              <Typography id="roadmaptext">
+                <b id="phases">PHASE 2</b>
+                <br />
+                <span id="phase2">GIVEAWAYS, WEBSITE TESTING </span>
+              </Typography>
+              <Typography id="mypoints">
+                <ul>
+                  <li>
+                    We will be giving away 50 FREE SolanaEagles 🦅 NFT on
+                    Discord for those who have our OG and Early Eagle Roles.
+                    This will be a great chance to grab our NFTs Earliest than
+                    others.
+                  </li>
+                  <li>
+                    We will be Testing our Official Minting Website because The
+                    Mint sets the stage for the entire lifecycle of an NFT
+                    Collection ! A Smooth and Seamless Minting Experience is a
+                    must.
+                  </li>
+                  <li>
+                    Site crashes or failed transactions can ruin community
+                    sentiment . Therefore, we are emphasizing High traffic
+                    stress testing on our Mint site prior to Launch !!
+                  </li>
+                </ul>
+              </Typography>
+            </Paper>
+          </Slide>
+        </Box>
+        <Box id="roadmapinside">
+          <Slide direction="left" in={true} timeout={{ enter: 7000 }}>
+            <Paper id="roadmapaper">
+              <Typography id="roadmaptext">
+                <b id="phases">PHASE 3</b> <br />
+                <span id="phase2">
+                  FREE MINT, MAIN SALE , RARITY LAUNCH & MARKET PLACE LAUNCH
+                </span>
+              </Typography>
+
+              <Typography id="mypoints3">
+                <ul>
+                  <li>
+                    <b>
+                      The first 500 SolanaEagles will be available for FREE
+                      MINTING on 15th November 18:00 UTC on our website.More
+                      details will be available on our Discord Channel !
+                    </b>
+                  </li>
+                  <li>
+                    The Remaining SolanaEagles 🦅 will be available for Mint on
+                    15th November 20:00 UTC for 0.2 SOL on our Official Minting
+                    Website.
+                  </li>
+                  <li>
+                    Traits rarity will be published after the Public Mint.
+                  </li>
+                  <li>Integration with all major Solana marketplaces.</li>
+                  <li>
+                    Our team is also hard at work Securing partnerships with
+                    secondary Marketplaces, so that the transition from Mint to
+                    Market is Effortless and Untroubled 🤝
+                  </li>
+                </ul>
+              </Typography>
+            </Paper>
+          </Slide>
+        </Box>
+        <Box id="roadmapinside">
+          <Slide direction="left" in={true} timeout={{ enter: 7000 }}>
+            <Paper id="roadmapaper">
+              <Typography id="roadmaptext">
+                <b id="phases">PHASE 4</b> <br />
+                <span id="phase2">
+                  FUTURE PROJECTS , COMMUNITY DONATION, COMMUNITY WALLET
+                </span>
+              </Typography>
+
+              <Typography id="mypoints4">
+                <ul>
+                  <li>
+                    One of the main facets of the SolanaEagles is Protecting
+                    those who are weaker than us, who may not have the support
+                    which we have, With that in mind we will be donating 20% of
+                    our Mint proceeds to an Orphanage or Old Age Home of DAOs
+                    choice 💜
+                  </li>
+                  <li>
+                    50% of mint proceeds will be deposited to our Community
+                    Wallet and Our Community Wallet will be used to Reinvest in
+                    our SolanaEagles Future project.
+                  </li>
+                  <li>
+                    We have lots of exciting things planned for future. We will
+                    be releasing another collection for the SolanaEagles Family
+                    in the future. And we also plan to do a free drop for
+                    holders and setting up our DAO (Decentralized autonomous
+                    organization){" "}
+                  </li>
+                  <li>
+                    All details will be described in our ROADMAP 2.0 very soon.
+                  </li>
+                </ul>
+              </Typography>
+            </Paper>
+          </Slide>
+        </Box>
+      </Box>
       <Box id="holder">
         <Slide direction="right" in={true} timeout={{ enter: 4000 }}>
-          <Typography id="mydrop">Holder Perks</Typography>
+          <Typography id="holderperks">Holder Perks</Typography>
         </Slide>
         <List>
           <Slide direction="right" in={true} timeout={{ enter: 5000 }}>
@@ -493,138 +643,6 @@ function Home() {
             </ListItem>
           </Slide>
         </List>
-      </Box>
-      <Slide direction="left" in={true} timeout={{ enter: 7000 }}>
-        <Typography id="mydrop2">RoadMap</Typography>
-      </Slide>
-      <Box id="roadmap">
-        <Box id="roadmapinside">
-          <Slide direction="left" in={true} timeout={{ enter: 7000 }}>
-            <Paper id="roadmapaper">
-              <Typography id="roadmaptext">
-                <b>PHASE 1</b> -- GETTING OUR EAGLES READY & CREATING OUR
-                COMMUNITY :
-              </Typography>
-
-              <Typography id="mypoints">
-                <ul>
-                  <li>
-                    Our goal at Solana Eagles is to bring high quality Artwork
-                    that the community loves. We want to do our part to
-                    strengthen the Solana community.
-                  </li>
-                  <li>
-                    We believe that a Strong and Engaging community is the
-                    backbone of every great project and truly we think without
-                    our members we won't be able to accomplish our goals. For
-                    SolanaEagles your Opinions and Feedback will be the utmost
-                    Priority{" "}
-                  </li>
-                </ul>
-              </Typography>
-            </Paper>
-          </Slide>
-        </Box>
-        <Box id="roadmapinside">
-          <Slide direction="left" in={true} timeout={{ enter: 7000 }}>
-            <Paper id="roadmapaper">
-              <Typography id="roadmaptext">
-                <b>PHASE 2</b> -- GIVEAWAYS, WEBSITE TESTING :
-              </Typography>
-              <Typography id="mypoints">
-                <ul>
-                  <li>
-                    We will be giving away 50 FREE SolEagle 🦅 NFT on Discord
-                    for those who have our OG and Early Eagle Roles. This will
-                    be a great chance to grab our NFTs Earliest than others.
-                  </li>
-                  <li>
-                    We will be Testing our Official Minting Website because The
-                    Mint sets the stage for the entire lifecycle of an NFT
-                    Collection ! A Smooth and Seamless Minting Experience is a
-                    must.
-                  </li>
-                  <li>
-                    Site crashes or failed transactions can ruin community
-                    sentiment . Therefore, we are emphasizing High traffic
-                    stress testing on our Mint site prior to Launch !!
-                  </li>
-                </ul>
-              </Typography>
-            </Paper>
-          </Slide>
-        </Box>
-        <Box id="roadmapinside">
-          <Slide direction="left" in={true} timeout={{ enter: 7000 }}>
-            <Paper id="roadmapaper">
-              <Typography id="roadmaptext">
-                <b>PHASE 3</b> -- FREE MINT, MAIN SALE , RARITY LAUNCH & MARKET
-                PLACE LAUNCH
-              </Typography>
-
-              <Typography id="mypoints3">
-                <ul>
-                  <li>
-                    The first 500 SolEagles will be available for FREE MINTING
-                    on 12th November 18:00 UTC on our website.More details will
-                    be available on our Discord Channel !
-                  </li>
-                  <li>
-                    The Remaining SolEagles 🦅 will be available for Mint on
-                    12th November 20:00 UTC for 0.2 SOL on our Official Minting
-                    Website.
-                  </li>
-                  <li>
-                    Traits rarity will be published after the Public Mint.
-                  </li>
-                  <li>Integration with all major Solana marketplaces.</li>
-                  <li>
-                    Our team is also hard at work Securing partnerships with
-                    secondary Marketplaces, so that the transition from Mint to
-                    Market is Effortless and Untroubled 🤝
-                  </li>
-                </ul>
-              </Typography>
-            </Paper>
-          </Slide>
-        </Box>
-        <Box id="roadmapinside">
-          <Slide direction="left" in={true} timeout={{ enter: 7000 }}>
-            <Paper id="roadmapaper">
-              <Typography id="roadmaptext">
-                <b>PHASE 4</b> -- FUTURE PROJECTS , COMMUNITY DONATION,
-                COMMUNITY WALLET
-              </Typography>
-
-              <Typography id="mypoints4">
-                <ul>
-                  <li>
-                    One of the main facets of the SolEagle is Protecting those
-                    who are weaker than us, who may not have the support which
-                    we have, With that in mind we will be donating 20% of our
-                    Mint proceeds to an Orphanage or Old Age Home of DAOs choice
-                    💜
-                  </li>
-                  <li>
-                    50% of mint proceeds will be deposited to our Community
-                    Wallet and Our Community Wallet will be used to Reinvest in
-                    our SolEagle Future project.
-                  </li>
-                  <li>
-                    We have lots of exciting things planned for future. We will
-                    be releasing another collection for the SolEagle Family in
-                    the future. And we also plan to do a free drop for holders
-                    and setting up our DAO (Decentralized autonomous
-                    organization){" "}
-                  </li>
-                  <li>
-                    All details will be described in our ROADMAP 2.0 very soon.
-                  </li>
-                </ul>
-              </Typography>
-            </Paper>
-          </Slide>
-        </Box>
       </Box>
 
       <Slide direction="left" in={true} timeout={{ enter: 7000 }}>
@@ -778,6 +796,7 @@ function Home() {
           </Slide>
         </Box> 
       </Box> */}
+      <h3 id="join">Join our discord and twitter for more updates</h3>
 
       <BottomNavigation id="bottom">
         <a href="https://twitter.com/SolanaEagle">
