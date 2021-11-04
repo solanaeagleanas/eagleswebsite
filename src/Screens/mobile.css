@@ -22,7 +22,6 @@
 }
 
 #solana {
-  margin-left: 450px;
   height: 400px;
   width: 400px;
 }
@@ -694,7 +693,7 @@
     margin-top: 15px;
   }
   #listbody {
-    margin-top: 40px;
+    margin-top: 70px;
   }
 
   #myrespo {

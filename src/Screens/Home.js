@@ -196,12 +196,14 @@ function Home() {
       </Box>
       <Box>
         <Typography id="name">SOLANA EAGLES</Typography>
-        <Avatar id="solana" src={solana} variant="square" alt="solana" />
+        <center>
+          <Avatar id="solana" src={solana} variant="square" alt="solana" />
+        </center>
       </Box>
       <Box className={classes.intro} id="intro" sx={{ display: "flex" }}>
         <Typography id="myintrotext">
           <Typography id="myheading">About us</Typography>
-          Solana Eagle is a NFT Collection of 4000 Unique Eagles 🦅 flying in
+          Solana Eagle is a NFT Collection of 3,333 Unique Eagles 🦅 flying in
           the Solana Blockchain. Eagles 🦅 fly alone or with their own kind !
           We, the team of Solana Eagles wants to build a community of people who
           are of our own kind - who shares the same vision as our's, who shares
@@ -258,7 +260,7 @@ function Home() {
       <hr id="questionhr" />
       {answer2 ? (
         <Typography id="answers" style={{ display: "block" }}>
-          4000 Unique SolanaEagles will be Minted.
+          3,333 Unique SolanaEagles will be Minted.
         </Typography>
       ) : (
         <Typography id="answers" style={{ display: "none" }}></Typography>
@@ -471,6 +473,7 @@ function Home() {
       <Slide direction="left" in={true} timeout={{ enter: 7000 }}>
         <Typography id="mydrop2">RoadMap</Typography>
       </Slide>
+
       <Box id="roadmap">
         <Box id="roadmapinside">
           <Slide direction="left" in={true} timeout={{ enter: 7000 }}>
