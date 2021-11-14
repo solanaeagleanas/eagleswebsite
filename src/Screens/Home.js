@@ -284,7 +284,7 @@ function Home() {
       <hr id="questionhr" />
       {answer3 ? (
         <Typography id="answers" style={{ display: "block" }}>
-          The Mint price will be 0.2 SOL .
+          The Mint price will be 0.1 SOL .
         </Typography>
       ) : (
         <Typography id="answers" style={{ display: "none" }}></Typography>
@@ -329,7 +329,7 @@ function Home() {
       <hr id="questionhr" />
       {answer5 ? (
         <Typography id="answers" style={{ display: "block" }}>
-          Minting will take place on 15th November at 8 pm (20:00) UTC time.{" "}
+          Minting will take place on 15th November at 7 pm (19:00) UTC time.{" "}
         </Typography>
       ) : (
         <Typography id="answers" style={{ display: "none" }}></Typography>
