@@ -229,7 +229,7 @@ if(timeleft<0){
       <div>
         <h1  id="mintstarts">Mint Starts in</h1>
         <h1 style={{color:"#fdd700"}} id="time"><span id="days"></span><span id="hours"></span><span id="mins"></span><span id="secs"></span></h1>
-      <h2 id="end"></h2>
+      
     </div>
     
         <Typography id="name">SOLANA EAGLES</Typography>
