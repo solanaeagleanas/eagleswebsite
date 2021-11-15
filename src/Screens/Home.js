@@ -30,6 +30,7 @@ import discord from "../discord.png";
 import mylogo from "../Logo.png";
 import solana from "../NFT.gif";
 import myvideo from "../Logo.gif";
+import nftcalendar from "../nftcalendar.jpeg";
 const useStyles = makeStyles(() => ({
   entire: {
     backgroundColor: "#141414",
@@ -552,13 +553,13 @@ function Home() {
                   <li>
                     <b>
                       The first 500 SolanaEagles will be available for FREE
-                      MINTING on 15th November 18:00 UTC on our website.More
+                      MINTING on 15th November 19:00 UTC on our website.More
                       details will be available on our Discord Channel !
                     </b>
                   </li>
                   <li>
                     The Remaining SolanaEagles 🦅 will be available for Mint on
-                    15th November 20:00 UTC for 0.2 SOL on our Official Minting
+                    15th November 19:00 UTC for 0.1 SOL on our Official Minting
                     Website.
                   </li>
                   <li>
@@ -800,6 +801,7 @@ function Home() {
         </Box> 
       </Box> */}
       <h3 id="join">Join our discord and twitter for more updates</h3>
+      <h3 id="join">As seen on  <center> <Avatar id="solana" src={nftcalendar} variant="square" alt="solana" /></center> </h3>
 
       <BottomNavigation id="bottom">
         <a href="https://twitter.com/SolanaEagle">

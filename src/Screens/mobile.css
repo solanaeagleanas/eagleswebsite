@@ -25,6 +25,10 @@
   height: 400px;
   width: 400px;
 }
+#solana {
+  height: 80px;
+  width: 80px;
+}
 #myrespo {
   display: none;
 }
@@ -736,6 +740,10 @@
     margin-top: 20px;
   }
 
+  #solana {
+    height: 70px;
+    width: 70px;
+  }
   #holderperks {
     font-size: 45px;
     text-align: center;
