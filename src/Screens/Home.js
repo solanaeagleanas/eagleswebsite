@@ -1,4 +1,4 @@
-import React from "react";
+import React ,{useEffect}from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -67,6 +67,7 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
+
 function Home() {
   const classes = useStyles();
   const [answer1, setAnswer1] = React.useState(false);
@@ -79,6 +80,35 @@ function Home() {
   const [answer8, setAnswer8] = React.useState(false);
   const [answer9, setAnswer9] = React.useState(false);
   const [answer10, setAnswer10] = React.useState(false);
+  useEffect(() => {
+    var countDownDate = new Date("Nov 16, 2021 00:30:00").getTime();
+  setInterval(function() {
+    var now = new Date().getTime();
+    var timeleft = countDownDate - now;
+        
+    // Calculating the days, hours, minutes and seconds left
+    var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+    document.getElementById("days").innerHTML = days + "d : "
+document.getElementById("hours").innerHTML = hours + "h : " 
+document.getElementById("mins").innerHTML = minutes + "m : " 
+document.getElementById("secs").innerHTML = seconds + "s"
+if(timeleft<0){
+  document.getElementById("days").innerHTML ="0d : "
+  document.getElementById("hours").innerHTML ="0h : " 
+  document.getElementById("mins").innerHTML = "0m : " 
+  document.getElementById("secs").innerHTML = "0s"
+  document.getElementById("mintstarts").innerHTML = "Mint Started"
+
+}
+   
+    }, 1000)
+  
+    },[]);
+
+    
   const handleAnswer = () => {
     setAnswer1(true);
   };
@@ -196,11 +226,18 @@ function Home() {
         <Avatar alt="Remy Sharp" variant="square" src={banner} id="mybanner" />
       </Box>
       <Box>
+      <div>
+        <h1  id="mintstarts">Mint Starts in</h1>
+        <h1 style={{color:"#fdd700"}} id="time"><span id="days"></span><span id="hours"></span><span id="mins"></span><span id="secs"></span></h1>
+      <h2 id="end"></h2>
+    </div>
+    
         <Typography id="name">SOLANA EAGLES</Typography>
         <center>
           <Avatar id="solana" src={solana} variant="square" alt="solana" />
         </center>
       </Box>
+
       <Box className={classes.intro} id="intro" sx={{ display: "flex" }}>
         <Typography id="myintrotext">
           <Typography id="myheading">About us</Typography>
@@ -215,7 +252,7 @@ function Home() {
           <Avatar src={myvideo} id="myvideo" alt="video" variant="square" />
         </div>
       </Box>
-      <div id="faqs">
+        <div id="faqs">
         <Slide direction="right" in={true} timeout={{ enter: 2000 }}>
           <Typography id="mydrop">FAQS</Typography>
         </Slide>
@@ -801,7 +838,7 @@ function Home() {
         </Box> 
       </Box> */}
       <h3 id="join">Join our discord and twitter for more updates</h3>
-      <h3 id="join">As seen on  <center> <Avatar id="solana" src={nftcalendar} variant="square" alt="solana" /></center> </h3>
+      <h3 id="join">As seen on  <center> <Avatar id="nftc" src={nftcalendar} variant="square" alt="solana" /></center> </h3>
 
       <BottomNavigation id="bottom">
         <a href="https://twitter.com/SolanaEagle">

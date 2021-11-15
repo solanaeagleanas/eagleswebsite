@@ -11,6 +11,21 @@
   text-align: center;
   margin-top: 10px;
 }
+#mintstarts
+{
+  font-family: Cambria;
+  color: #fdd700;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 10px;
+
+}
+#time{
+  
+  font-size: 50px;
+  text-align: center;
+
+}
 #join {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   color: white;
@@ -25,7 +40,7 @@
   height: 400px;
   width: 400px;
 }
-#solana {
+#nftc {
   height: 80px;
   width: 80px;
 }
@@ -740,7 +755,7 @@
     margin-top: 20px;
   }
 
-  #solana {
+  #nftc {
     height: 70px;
     width: 70px;
   }
