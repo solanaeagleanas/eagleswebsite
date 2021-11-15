@@ -83,8 +83,11 @@ function Home() {
   useEffect(() => {
     var countDownDate = new Date("Nov 16, 2021 00:30:00").getTime();
   setInterval(function() {
-    var now = new Date().getTime();
-    var timeleft = countDownDate - now;
+    var now = new Date();
+    var n = now.toUTCString();
+    var time = Date.parse(n);
+    var timeleft = countDownDate - time;
+
         
     // Calculating the days, hours, minutes and seconds left
     var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
@@ -838,7 +841,7 @@ if(timeleft<0){
         </Box> 
       </Box> */}
       <h3 id="join">Join our discord and twitter for more updates</h3>
-      <h3 id="join">As seen on  <center> <Avatar id="nftc" src={nftcalendar} variant="square" alt="solana" /></center> </h3>
+      <h3 id="join">As seen on  <a href="https://nftcalendar.io/event/solana-eagles-1/"> <center><Avatar id="nftc" src={nftcalendar} variant="square" alt="solana" /></center></a> </h3>
 
       <BottomNavigation id="bottom">
         <a href="https://twitter.com/SolanaEagle">
