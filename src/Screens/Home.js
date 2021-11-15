@@ -81,7 +81,7 @@ function Home() {
   const [answer9, setAnswer9] = React.useState(false);
   const [answer10, setAnswer10] = React.useState(false);
   useEffect(() => {
-    var countDownDate = new Date("Nov 16, 2021 00:30:00").getTime();
+    var countDownDate = new Date("Nov 15, 2021 19:00:00 UTC").getTime();
   setInterval(function() {
     var now = new Date();
     var n = now.toUTCString();
