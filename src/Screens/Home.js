@@ -1,4 +1,4 @@
-import React ,{useEffect}from "react";
+import React, { useEffect } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -67,7 +67,6 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-
 function Home() {
   const classes = useStyles();
   const [answer1, setAnswer1] = React.useState(false);
@@ -82,36 +81,33 @@ function Home() {
   const [answer10, setAnswer10] = React.useState(false);
   useEffect(() => {
     var countDownDate = new Date("Nov 15, 2021 19:00:00 UTC").getTime();
-  setInterval(function() {
-    var now = new Date();
-    var n = now.toUTCString();
-    var time = Date.parse(n);
-    var timeleft = countDownDate - time;
+    setInterval(function () {
+      var now = new Date();
+      var n = now.toUTCString();
+      var time = Date.parse(n);
+      var timeleft = countDownDate - time;
 
-        
-    // Calculating the days, hours, minutes and seconds left
-    var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
-    document.getElementById("days").innerHTML = days + "d : "
-document.getElementById("hours").innerHTML = hours + "h : " 
-document.getElementById("mins").innerHTML = minutes + "m : " 
-document.getElementById("secs").innerHTML = seconds + "s"
-if(timeleft<0){
-  document.getElementById("days").innerHTML ="0d : "
-  document.getElementById("hours").innerHTML ="0h : " 
-  document.getElementById("mins").innerHTML = "0m : " 
-  document.getElementById("secs").innerHTML = "0s"
-  document.getElementById("mintstarts").innerHTML = "Mint Started"
+      // Calculating the days, hours, minutes and seconds left
+      var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+      var hours = Math.floor(
+        (timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+      document.getElementById("days").innerHTML = days + "d : ";
+      document.getElementById("hours").innerHTML = hours + "h : ";
+      document.getElementById("mins").innerHTML = minutes + "m : ";
+      document.getElementById("secs").innerHTML = seconds + "s";
+      if (timeleft < 0) {
+        document.getElementById("days").innerHTML = "";
+        document.getElementById("hours").innerHTML = "";
+        document.getElementById("mins").innerHTML = "";
+        document.getElementById("secs").innerHTML = "";
+        document.getElementById("mintstarts").innerHTML = "Mint Started";
+      }
+    }, 1000);
+  }, []);
 
-}
-   
-    }, 1000)
-  
-    },[]);
-
-    
   const handleAnswer = () => {
     setAnswer1(true);
   };
@@ -229,12 +225,36 @@ if(timeleft<0){
         <Avatar alt="Remy Sharp" variant="square" src={banner} id="mybanner" />
       </Box>
       <Box>
-      <div>
-        <h1  id="mintstarts">Mint Starts in</h1>
-        <h1 style={{color:"#fdd700"}} id="time"><span id="days"></span><span id="hours"></span><span id="mins"></span><span id="secs"></span></h1>
-      
-    </div>
-    
+        <div>
+          <h1 id="mintstarts">Mint Started</h1>
+
+          <center>
+            <h2 style={{ color: "white" }}>Click on the Link below</h2>
+            <a
+              style={{ color: "white", fontSize: "20px" }}
+              href="https://solanaeagles-mint.vercel.app/"
+            >
+              https://solanaeagles-mint.vercel.app/
+            </a>
+            <br />
+            <br />
+            <a
+              style={{ color: "white", fontSize: "20px" }}
+              href="https://solanaeagles-mint-solanaeagles.vercel.app/"
+            >
+              https://solanaeagles-mint-solanaeagles.vercel.app/
+            </a>
+            <br />
+            <br />
+          </center>
+          <h1 style={{ color: "#fdd700" }} id="time">
+            <span id="days"></span>
+            <span id="hours"></span>
+            <span id="mins"></span>
+            <span id="secs"></span>
+          </h1>
+        </div>
+
         <Typography id="name">SOLANA EAGLES</Typography>
         <center>
           <Avatar id="solana" src={solana} variant="square" alt="solana" />
@@ -255,7 +275,7 @@ if(timeleft<0){
           <Avatar src={myvideo} id="myvideo" alt="video" variant="square" />
         </div>
       </Box>
-        <div id="faqs">
+      <div id="faqs">
         <Slide direction="right" in={true} timeout={{ enter: 2000 }}>
           <Typography id="mydrop">FAQS</Typography>
         </Slide>
@@ -841,7 +861,15 @@ if(timeleft<0){
         </Box> 
       </Box> */}
       <h3 id="join">Join our discord and twitter for more updates</h3>
-      <h3 id="join">As seen on  <a href="https://nftcalendar.io/event/solana-eagles-1/"> <center><Avatar id="nftc" src={nftcalendar} variant="square" alt="solana" /></center></a> </h3>
+      <h3 id="join">
+        As seen on{" "}
+        <a href="https://nftcalendar.io/event/solana-eagles-1/">
+          {" "}
+          <center>
+            <Avatar id="nftc" src={nftcalendar} variant="square" alt="solana" />
+          </center>
+        </a>{" "}
+      </h3>
 
       <BottomNavigation id="bottom">
         <a href="https://twitter.com/SolanaEagle">
