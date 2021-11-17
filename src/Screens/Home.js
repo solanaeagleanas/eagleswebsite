@@ -103,7 +103,7 @@ function Home() {
         document.getElementById("hours").innerHTML = "";
         document.getElementById("mins").innerHTML = "";
         document.getElementById("secs").innerHTML = "";
-        document.getElementById("mintstarts").innerHTML = "Mint Started";
+        document.getElementById("mintstarts").innerHTML = "Mint is Live!";
       }
     }, 1000);
   }, []);
@@ -226,7 +226,7 @@ function Home() {
       </Box>
       <Box>
         <div>
-          <h1 id="mintstarts">Mint Started</h1>
+          <h1 id="mintstarts">Mint is Live!</h1>
 
           <center>
             <h2 style={{ color: "white" }}>Click on the Link below</h2>
