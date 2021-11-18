@@ -79,34 +79,7 @@ function Home() {
   const [answer8, setAnswer8] = React.useState(false);
   const [answer9, setAnswer9] = React.useState(false);
   const [answer10, setAnswer10] = React.useState(false);
-  useEffect(() => {
-    var countDownDate = new Date("Nov 15, 2021 19:00:00 UTC").getTime();
-    setInterval(function () {
-      var now = new Date();
-      var n = now.toUTCString();
-      var time = Date.parse(n);
-      var timeleft = countDownDate - time;
 
-      // Calculating the days, hours, minutes and seconds left
-      var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
-      var hours = Math.floor(
-        (timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-      );
-      var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
-      document.getElementById("days").innerHTML = days + "d : ";
-      document.getElementById("hours").innerHTML = hours + "h : ";
-      document.getElementById("mins").innerHTML = minutes + "m : ";
-      document.getElementById("secs").innerHTML = seconds + "s";
-      if (timeleft < 0) {
-        document.getElementById("days").innerHTML = "";
-        document.getElementById("hours").innerHTML = "";
-        document.getElementById("mins").innerHTML = "";
-        document.getElementById("secs").innerHTML = "";
-        document.getElementById("mintstarts").innerHTML = "Mint is Live!";
-      }
-    }, 1000);
-  }, []);
 
   const handleAnswer = () => {
     setAnswer1(true);
@@ -225,36 +198,7 @@ function Home() {
         <Avatar alt="Remy Sharp" variant="square" src={banner} id="mybanner" />
       </Box>
       <Box>
-        <div>
-          <h1 id="mintstarts">Mint is Live!</h1>
-
-          <center>
-            <h2 style={{ color: "white" }}>Click on the Link below</h2>
-            <a
-              style={{ color: "white", fontSize: "20px" }}
-              href="https://solanaeagles-mint.vercel.app/"
-            >
-              https://solanaeagles-mint.vercel.app/
-            </a>
-            <br />
-            <br />
-            <a
-              style={{ color: "white", fontSize: "20px" }}
-              href="https://solanaeagles-mint-solanaeagles.vercel.app/"
-            >
-              https://solanaeagles-mint-solanaeagles.vercel.app/
-            </a>
-            <br />
-            <br />
-          </center>
-          <h1 style={{ color: "#fdd700" }} id="time">
-            <span id="days"></span>
-            <span id="hours"></span>
-            <span id="mins"></span>
-            <span id="secs"></span>
-          </h1>
-        </div>
-
+       
         <Typography id="name">SOLANA EAGLES</Typography>
         <center>
           <Avatar id="solana" src={solana} variant="square" alt="solana" />
