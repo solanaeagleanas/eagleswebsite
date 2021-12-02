@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -79,7 +79,6 @@ function Home() {
   const [answer8, setAnswer8] = React.useState(false);
   const [answer9, setAnswer9] = React.useState(false);
   const [answer10, setAnswer10] = React.useState(false);
-
 
   const handleAnswer = () => {
     setAnswer1(true);
@@ -198,7 +197,6 @@ function Home() {
         <Avatar alt="Remy Sharp" variant="square" src={banner} id="mybanner" />
       </Box>
       <Box>
-       
         <Typography id="name">SOLANA EAGLES</Typography>
         <center>
           <Avatar id="solana" src={solana} variant="square" alt="solana" />
