@@ -196,6 +196,40 @@ function Home() {
       <Box>
         <Avatar alt="Remy Sharp" variant="square" src={banner} id="mybanner" />
       </Box>
+      <center id="prchasebtn">
+        <Button>
+          <a
+            href="https://www.magiceden.io/marketplace/solana_eagle"
+            style={{
+              border: "1px solid yellow",
+              padding: "12px",
+              color: "black",
+              textDecoration: "none",
+              borderRadius: "5px",
+              backgroundColor: "yellow",
+            }}
+          >
+            <b>Purchase on MagicEden</b>
+          </a>
+        </Button>
+      </center>
+      <center>
+        <Button>
+          <a
+            href="https://solsea.io/collection/61928ade5a06382a5ff3ec02"
+            style={{
+              border: "1px solid yellow",
+              padding: "12px",
+              color: "black",
+              textDecoration: "none",
+              borderRadius: "5px",
+              backgroundColor: "yellow",
+            }}
+          >
+            <b>Purchase on Solsea</b>
+          </a>
+        </Button>
+      </center>
       <Box>
         <Typography id="name">SOLANA EAGLES</Typography>
         <center>
